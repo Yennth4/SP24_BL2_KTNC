@@ -53,17 +53,20 @@ public class SanPhamServiceTest {
     public void deleteSanPhamValid() {
         SanPham sanPham1 = new SanPham("2" , "SP2" , "SanPham2" , 100.5f , "Trang" , "M" , 40);
         service.addSanPham(sanPham1);
+        int sizeBeforeDelete = service.getAll().size();
         service.deleteSanPham("SP2");
-        SanPham sp = service.getAll().get(0);
-        Assertions.assertEquals("1" , sp.getId());
+        int sizeAfterDelete = service.getAll().size();
+        Assertions.assertEquals(sizeBeforeDelete - 1 , sizeAfterDelete);
     }
 
     @Test
     public void deleteSanPhamInValid() {
         SanPham sanPham1 = new SanPham("2" , "SP2" , "SanPham2" , 100.5f , "Trang" , "M" , 40);
         service.addSanPham(sanPham1);
-        SanPham sanPham1new = new SanPham("2" , "SP2" , "SanPham3" , 100.5f , "Trang" , "M" , 40);
-        service.updateSanPham("SP2" , sanPham1new);
-        Assertions.assertEquals("1" , service.getAll().get(0));
+        int sizeBeforeDelete = service.getAll().size();
+        service.deleteSanPham("SP2");
+        int sizeAfterDelete = service.getAll().size();
+        Assertions.assertEquals(sizeBeforeDelete , sizeAfterDelete);
     }
+
 }

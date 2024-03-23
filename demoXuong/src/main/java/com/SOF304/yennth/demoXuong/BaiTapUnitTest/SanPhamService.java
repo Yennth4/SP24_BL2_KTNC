@@ -38,14 +38,17 @@ public class SanPhamService {
                 return;
             }
         }
-        System.out.println("Khong tim thay san pham ma: " + maSP);
+
     }
 
     public void deleteSanPham(String maSP) {
         for (int i = 0; i < listSP.size(); i++) {
-            if (listSP.get(i).getId().equalsIgnoreCase(maSP)){
+            if (listSP.get(i).getMaSP().equalsIgnoreCase(maSP)){
                 listSP.remove(i);
+                System.out.println("Xoa thanh cong ma: " + maSP);
+                return;
             }
         }
+        System.out.println("Khong tim thay san pham ma: " + maSP);
     }
 }
