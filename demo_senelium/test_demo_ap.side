@@ -1,0 +1,354 @@
+{
+  "id": "d2d652f3-1e9b-47f1-a1a0-9065b6bd9141",
+  "version": "2.0",
+  "name": "test_demo_ap",
+  "url": "https://ap.poly.edu.vn",
+  "tests": [{
+    "id": "c2a49d5f-0496-4f91-acb1-92a017b50505",
+    "name": "login_ap",
+    "commands": [{
+      "id": "d838737e-0652-43ab-bc6d-5afb537f958d",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be21a197-081c-4295-b0a5-f24532fad06c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "274a519d-9066-4ae1-96ed-85b3f8b84390",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginWrap:nth-child(1) span",
+      "targets": [
+        ["css=.loginWrap:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Login with @fpt.edu.vn')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b165b63-8ea9-4b6e-9065-ff2f4bcf392b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropButton:nth-child(1)",
+      "targets": [
+        ["css=.dropButton:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cao đẳng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c74ec79-7544-4330-a7fb-cb1e157f225b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kt-menu__nav > .kt-menu__item:nth-child(2) .kt-menu__link-text",
+      "targets": [
+        ["css=.kt-menu__nav > .kt-menu__item:nth-child(2) .kt-menu__link-text", "css:finder"],
+        ["xpath=//div[@id='kt_aside_menu']/ul/li[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Điểm danh')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a949ac7-8e63-4a22-bd4c-44fa372c956c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kt-header__topbar-username",
+      "targets": [
+        ["css=.kt-header__topbar-username", "css:finder"],
+        ["xpath=//div[@id='kt_header']/div[2]/div[2]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Yến')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41b179a0-3703-41ca-8b74-597f1acc2a32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kt-notification__item-title",
+      "targets": [
+        ["css=.kt-notification__item-title", "css:finder"],
+        ["xpath=//div[@id='kt_header']/div[2]/div[2]/div[2]/div[2]/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//a/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05310ae4-c616-4246-b769-b26e95d3b0d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kt-widget__media > img",
+      "targets": [
+        ["css=.kt-widget__media > img", "css:finder"],
+        ["xpath=//img[@alt='image']", "xpath:img"],
+        ["xpath=//div[@id='kt_user_profile_aside']/div/div[2]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d279bad-ff0f-4f6f-80b4-d3bf55fdd2a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kt-widget__item",
+      "targets": [
+        ["css=.kt-widget__item", "css:finder"],
+        ["xpath=//div[@id='kt_user_profile_aside']/div/div[2]/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ap.poly.edu.vn/sinh-vien/ho-so-ca-nhan')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c8330c2-59b3-4b6f-9eaa-0cb44b935b08",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Nguyễn Thị Hải Yến",
+      "targets": [
+        ["linkText=Nguyễn Thị Hải Yến", "linkText"],
+        ["css=.kt-widget__username", "css:finder"],
+        ["xpath=//a[contains(text(),'Nguyễn Thị Hải Yến')]", "xpath:link"],
+        ["xpath=//div[@id='kt_user_profile_aside']/div/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8226eb05-a6e9-449c-86dc-be45aec06d37",
+      "comment": "",
+      "command": "click",
+      "target": "id=close-notification",
+      "targets": [
+        ["id=close-notification", "id"],
+        ["css=#close-notification", "css:finder"],
+        ["xpath=//div[@id='close-notification']", "xpath:attributes"],
+        ["xpath=//div[@id='dropdown-menu']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bf73e7f-d27c-4489-ac6c-3e7c988216e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kt-header__topbar-icon path",
+      "targets": [
+        ["css=.kt-header__topbar-icon path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0055b745-80c0-4402-9652-808e3a40fef6",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuButton",
+      "targets": [
+        ["id=dropdownMenuButton", "id"],
+        ["css=#dropdownMenuButton", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuButton']", "xpath:attributes"],
+        ["xpath=//div[@id='kt_header']/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d76c2d2b-ada2-4f8c-b2c3-ec53b378c700",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown-menu",
+      "targets": [
+        ["id=dropdown-menu", "id"],
+        ["css=#dropdown-menu", "css:finder"],
+        ["xpath=//div[@id='dropdown-menu']", "xpath:attributes"],
+        ["xpath=//div[@id='kt_header']/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dad48ab-4d27-46fe-988a-71a5f11267f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-times",
+      "targets": [
+        ["css=.fa-times", "css:finder"],
+        ["xpath=//div[@id='close-notification']/i", "xpath:idRelative"],
+        ["xpath=//div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c3ba943-2e8c-4723-a60e-766f652d7da7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kt-header__topbar-welcome",
+      "targets": [
+        ["css=.kt-header__topbar-welcome", "css:finder"],
+        ["xpath=//div[@id='kt_header']/div[2]/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Xin chào,')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4895de75-42f6-4126-a813-dcef143999d0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Đăng xuất",
+      "targets": [
+        ["linkText=Đăng xuất", "linkText"],
+        ["css=.btn-label", "css:finder"],
+        ["xpath=//a[contains(text(),'Đăng xuất')]", "xpath:link"],
+        ["xpath=//div[@id='kt_header']/div[2]/div[2]/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ap.poly.edu.vn/dang-xuat')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Đăng xuất')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d40963eb-cf40-4534-b585-a95c78079f82",
+      "comment": "",
+      "command": "select",
+      "target": "id=term_id",
+      "targets": [],
+      "value": "label=Fall 2023"
+    }]
+  }, {
+    "id": "050aa9be-6ac9-4613-8a41-f0cf07a17185",
+    "name": "dangxuat_ap",
+    "commands": [{
+      "id": "f712426d-4131-4b03-b575-296db376c7a6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd4d4883-ecee-494a-aec2-965c94195e22",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1800b69-2d7d-4cf1-aab7-d4ecfc8e3c34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.homepageButton:nth-child(1) > span",
+      "targets": [
+        ["css=.homepageButton:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='app1']/div/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cán bộ đào tạo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af611f8d-731f-4759-a8a3-508e6fb0bf75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.homepageButton:nth-child(4)",
+      "targets": [
+        ["css=.homepageButton:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='app1']/div/div/div/div/div/div/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sinh viên')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88906585-640f-48d9-98f2-464cdce0b314",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginWrap:nth-child(1) > .topBarButton",
+      "targets": [
+        ["css=.loginWrap:nth-child(1) > .topBarButton", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login with @fpt.edu.vn')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4715b48e-6a81-4dcd-85b5-86238eb685ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropButton:nth-child(1)",
+      "targets": [
+        ["css=.dropButton:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cao đẳng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2f9eddf-c484-4287-bc41-38d0a56f6570",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropButton:nth-child(1) > span",
+      "targets": [
+        ["css=.dropButton:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cao đẳng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d640014-2307-445f-a2de-c9b960aaa9af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginWrap:nth-child(1) > .topBarButton",
+      "targets": [
+        ["css=.loginWrap:nth-child(1) > .topBarButton", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login with @fpt.edu.vn')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ae2d4c8-433e-46ed-b188-0370b1d5584a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropButton:nth-child(1)",
+      "targets": [
+        ["css=.dropButton:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cao đẳng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "edf10b95-10f8-4680-bf05-9a283d0a1722",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kt-header__topbar-welcome",
+      "targets": [
+        ["css=.kt-header__topbar-welcome", "css:finder"],
+        ["xpath=//div[@id='kt_header']/div[2]/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Xin chào,')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5a6f4e7-3fb5-416d-b0af-ed26a25bca23",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Đăng xuất",
+      "targets": [
+        ["linkText=Đăng xuất", "linkText"],
+        ["css=.btn-label", "css:finder"],
+        ["xpath=//a[contains(text(),'Đăng xuất')]", "xpath:link"],
+        ["xpath=//div[@id='kt_header']/div[2]/div[2]/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ap.poly.edu.vn/dang-xuat')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Đăng xuất')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2ef39bca-9870-47ee-8c78-997c5ab79fea",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c2a49d5f-0496-4f91-acb1-92a017b50505"]
+  }],
+  "urls": ["https://ap.poly.edu.vn/"],
+  "plugins": []
+}

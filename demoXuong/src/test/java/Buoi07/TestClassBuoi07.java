@@ -2,13 +2,13 @@ package Buoi07;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TestClassBuoi07 {
+
     EdgeDriver edgeDriver = new EdgeDriver();
 
     @BeforeMethod
@@ -17,7 +17,7 @@ public class TestClassBuoi07 {
     }
 
     @Test
-    public void run() {
+    public void dangKi() {
         edgeDriver.get("https://yody.vn/");
         WebElement btnDangKi = edgeDriver.findElement((By.className("register")));
         btnDangKi.click();
@@ -31,8 +31,7 @@ public class TestClassBuoi07 {
     @Test
     public void dangNhap() {
         edgeDriver.get("https://yody.vn/");
-        WebElement btnDangNhap = edgeDriver.findElement((By.className("login")));
-        btnDangNhap.click();
+        edgeDriver.findElement((By.className("login"))).click();
         edgeDriver.findElement((By.id("customer_email"))).sendKeys("nguyenthihaiyen9c4@gmail.com");
         edgeDriver.findElement((By.id("customer_password"))).sendKeys("HaiYen4");
         edgeDriver.findElement((By.className("btn-login"))).click();
@@ -40,10 +39,7 @@ public class TestClassBuoi07 {
 
     @Test
     public void doiMatKhau() {
-        dangNhap();
-//        JavascriptExecutor js = (JavascriptExecutor) edgeDriver;
-//        js.executeScript("window.location.href = 'https://yody.vn/account';");
-        edgeDriver.findElement((By.className("title-info"))).click();
+//        dangNhap();
         edgeDriver.findElement((By.id("OldPass"))).sendKeys("HaiYen4");
         edgeDriver.findElement((By.id("changePass"))).sendKeys("HaiYen");
         edgeDriver.findElement((By.id("confirmPass"))).sendKeys("HaiYen");
