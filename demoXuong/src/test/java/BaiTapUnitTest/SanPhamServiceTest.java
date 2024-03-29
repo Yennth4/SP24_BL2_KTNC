@@ -1,7 +1,7 @@
 package BaiTapUnitTest;
 
-import com.SOF304.yennth.demoXuong.BaiTapUnitTest.SanPham;
-import com.SOF304.yennth.demoXuong.BaiTapUnitTest.SanPhamService;
+import com.SOF304.yennth.Buoi05.BaiTapUnitTest.SanPham;
+import com.SOF304.yennth.Buoi05.BaiTapUnitTest.SanPhamService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

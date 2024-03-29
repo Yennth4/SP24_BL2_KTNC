@@ -1,4 +1,4 @@
-package com.SOF304.yennth.demoXuong.BaiTapUnitTest;
+package com.SOF304.yennth.Buoi05.BaiTapUnitTest;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
