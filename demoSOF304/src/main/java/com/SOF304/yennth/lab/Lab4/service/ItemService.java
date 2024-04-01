@@ -1,6 +1,6 @@
-package com.SOF304.yennth.Lab4.service;
+package com.SOF304.yennth.lab.Lab4.service;
 
-import com.SOF304.yennth.Lab4.entity.Item;
+import com.SOF304.yennth.lab.Lab4.entity.Item;
 
 import java.util.ArrayList;
 import java.util.List;

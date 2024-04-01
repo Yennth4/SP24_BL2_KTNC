@@ -1,7 +1,7 @@
 package Lab4;
 
-import com.SOF304.yennth.Lab4.entity.Item;
-import com.SOF304.yennth.Lab4.service.ItemService;
+import com.SOF304.yennth.lab.Lab4.entity.Item;
+import com.SOF304.yennth.lab.Lab4.service.ItemService;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
 

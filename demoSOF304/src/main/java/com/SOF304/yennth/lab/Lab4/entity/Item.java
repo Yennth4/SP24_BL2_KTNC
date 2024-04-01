@@ -1,4 +1,4 @@
-package com.SOF304.yennth.Lab4.entity;
+package com.SOF304.yennth.lab.Lab4.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

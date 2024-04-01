@@ -1,7 +1,7 @@
 package Lab5;
 
-import com.SOF304.yennth.Lab5.entity.SanPham;
-import com.SOF304.yennth.Lab5.service.SanPhamService;
+import com.SOF304.yennth.lab.Lab5.entity.SanPham;
+import com.SOF304.yennth.lab.Lab5.service.SanPhamService;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
 
