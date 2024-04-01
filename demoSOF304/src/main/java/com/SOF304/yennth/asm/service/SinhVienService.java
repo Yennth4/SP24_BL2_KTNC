@@ -1,7 +1,6 @@
 package com.SOF304.yennth.asm.service;
 
 import com.SOF304.yennth.asm.entity.SinhVien;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,12 +21,12 @@ public class SinhVienService {
     }
 
     public List<SinhVien> searchByMaSV(String masv) {
-        List<SinhVien> result = new ArrayList<>();
+        List<SinhVien> listSV = new ArrayList<>();
         for (SinhVien sv : listSinhVien) {
             if (sv.getMasv().equals(masv)) {
-                result.add(sv);
+                listSV.add(sv);
             }
         }
-        return result;
+        return listSV;
     }
 }

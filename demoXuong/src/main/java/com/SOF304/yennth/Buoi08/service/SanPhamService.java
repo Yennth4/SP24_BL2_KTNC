@@ -29,15 +29,20 @@ public class SanPhamService {
     }
 
     public void updateSanPham(String id, SanPham sanPham) {
-        if (sanPham.getGia() < 0 || sanPham.getSoLuong() < 0) {
-            throw new IllegalArgumentException("Giá và số lượng không được âm");
-        } else {
-            for (int i = 0; i < listSanPham.size(); i++) {
-                if (listSanPham.get(i).getId().equalsIgnoreCase(id)) {
-                    listSanPham.set(i, sanPham);
-                    System.out.println("Sửa thành công!!!");
+        try {
+            if (sanPham.getGia() < 0 || sanPham.getSoLuong() < 0) {
+                throw new IllegalArgumentException("Giá và số lượng không được âm");
+            } else {
+                for (int i = 0; i < listSanPham.size(); i++) {
+                    if (listSanPham.get(i).getId().equalsIgnoreCase(id)) {
+                        listSanPham.set(i, sanPham);
+                        System.out.println("Sửa thành công!!!");
+                    }
                 }
             }
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            throw new IllegalArgumentException("Phải là số");
         }
     }
 

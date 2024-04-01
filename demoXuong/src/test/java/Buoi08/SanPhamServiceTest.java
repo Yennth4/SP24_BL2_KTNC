@@ -38,7 +38,7 @@ public class SanPhamServiceTest {
             // Chờ ngoại lệ được ném
             Assert.assertEquals("Giá và số lượng không được âm", e.getMessage());
         }
-        Assert.assertEquals(2, service.getAll().size()); // Không thêm sản phẩm mới
+        Assert.assertEquals(2, service.getAll().size());
     }
 
     @Test
@@ -63,7 +63,7 @@ public class SanPhamServiceTest {
     }
 
     @Test
-    public void testUpdateInvalidSanPham() {
+    public void testUpdateInValidSanPhamAm() {
         // Cập nhật với giá và số lượng âm
         SanPham sanPham = new SanPham("1", "MXSP1", "SanPham Updated", "Den", "M", "Duoi ca updated", -250d, -150);
         try {
@@ -71,6 +71,19 @@ public class SanPhamServiceTest {
         } catch (IllegalArgumentException e) {
             // Chờ ngoại lệ được ném
             Assert.assertEquals("Giá và số lượng không được âm", e.getMessage());
+        }
+        Assert.assertNotEquals(sanPham, service.getAll().get(0)); // Không cập nhật sản phẩm
+    }
+
+    @Test
+    public void testUpdateInValidSanPhamLaChu() {
+        // Cập nhật với giá và số lượng âm
+        SanPham sanPham = new SanPham("1", "MXSP1", "SanPham Updated", "Den", "M", "Duoi ca updated", 1d, 1);
+        try {
+            service.updateSanPham("1", sanPham);
+        } catch (IllegalArgumentException e) {
+            // Chờ ngoại lệ được ném
+            Assert.assertEquals("Giá và số lượng phải là số", e.getMessage());
         }
         Assert.assertNotEquals(sanPham, service.getAll().get(0)); // Không cập nhật sản phẩm
     }

@@ -84,7 +84,7 @@ public class TestSinhVienService {
     @Test
     public void testTenlopContainsSpecialCharacters() {
         Assert.assertThrows(IllegalArgumentException.class, () -> {
-            SinhVien sv = new SinhVien("1", "John Doe", "ABC123", "K@18", "SV001");
+            SinhVien sv = new SinhVien("1", "John Doe", "ABC123", "K18", "SV001");
         });
     }
 
