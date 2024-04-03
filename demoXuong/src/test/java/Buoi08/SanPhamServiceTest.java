@@ -1,11 +1,9 @@
 package Buoi08;
-
 import com.SOF304.yennth.Buoi08.service.SanPhamService;
 import com.SOF304.yennth.Buoi08.entity.SanPham;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
 
 public class SanPhamServiceTest {
@@ -19,7 +17,7 @@ public class SanPhamServiceTest {
         service.addSanPham(new SanPham("2", "MXSP2", "SanPham 2", "Do", "XXL", "Duoi ca 1", 100d, 100));
     }
 
-    @Test
+    @Test()
     public void testAddValidSanPham() {
         SanPham sanPham = new SanPham("3", "MXSP3", "SanPham 3", "Xanh", "XL", "Duoi ca 2", 150d, 50);
         service.addSanPham(sanPham);
@@ -90,7 +88,6 @@ public class SanPhamServiceTest {
 
     @Test
     public void testRemoveValidSanPham() {
-        // Xóa một sản phẩm đã tồn tại
         service.removeSanPham("1");
         Assert.assertEquals(1, service.getAll().size());
     }
