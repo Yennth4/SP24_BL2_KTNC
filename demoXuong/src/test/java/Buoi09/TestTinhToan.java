@@ -1,8 +1,8 @@
 package Buoi09;
 
 import com.SOF304.yennth.Buoi09.service.TinhToanService;
-import com.beust.ah.A;
 import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -32,6 +32,8 @@ public class TestTinhToan {
 
     @Test
     public void soNguyenDuongNInValid() {
-        Assert.assertEquals(6 , service.soNguyenDuongN(-1));
+        Assertions.assertThrows(ArithmeticException.class , () -> {
+            service.soNguyenDuongN(-1);
+        });
     }
 }

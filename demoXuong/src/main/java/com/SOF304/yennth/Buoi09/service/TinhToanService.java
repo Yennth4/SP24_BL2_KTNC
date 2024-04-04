@@ -16,7 +16,7 @@ public class TinhToanService {
             }
             return sum;
         } else {
-            throw new IllegalArgumentException("N phai la so duong");
+            throw new ArithmeticException("N phai la so duong");
         }
     }
 }

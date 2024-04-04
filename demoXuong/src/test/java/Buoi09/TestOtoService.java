@@ -2,6 +2,7 @@ package Buoi09;
 
 import com.SOF304.yennth.Buoi09.entity.XeOTO;
 import com.SOF304.yennth.Buoi09.service.XeOTOService;
+import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -28,7 +29,10 @@ public class TestOtoService {
     public void addXeInValid() {
         // Ten xe khong chua ki tu dac biet
         XeOTO xeOto = new XeOTO(1, "@Toyota", "KIA", "Cerato", 50000.0, 10, 2022, "Black");
-        listXe.addXe(xeOto);
+
+        Assert.assertThrows(IllegalArgumentException.class , () -> {
+            listXe.addXe(xeOto);
+        });
     }
 
     @Test
