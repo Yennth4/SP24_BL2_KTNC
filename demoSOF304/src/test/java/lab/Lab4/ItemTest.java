@@ -1,4 +1,4 @@
-package Lab4;
+package lab.Lab4;
 
 import com.SOF304.yennth.lab.Lab4.entity.Item;
 import com.SOF304.yennth.lab.Lab4.service.ItemService;

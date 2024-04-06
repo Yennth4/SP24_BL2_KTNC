@@ -1,4 +1,4 @@
-package Lab5;
+package lab.Lab5;
 
 import com.SOF304.yennth.lab.Lab5.entity.SanPham;
 import com.SOF304.yennth.lab.Lab5.service.SanPhamService;

@@ -1,4 +1,4 @@
-package Lab7.P2;
+package lab.Lab7.P2;
 
 
 import com.SOF304.yennth.lab.Lab7.P2.BaiHat;

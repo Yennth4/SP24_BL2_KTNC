@@ -1,4 +1,4 @@
-package Lab7.P1;
+package lab.Lab7.P1;
 
 import com.SOF304.yennth.lab.Lab7.P1.Calculator;
 import org.junit.jupiter.api.BeforeEach;
