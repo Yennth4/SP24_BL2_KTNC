@@ -1,4 +1,4 @@
-package Buoi7Test;
+package Buoi7;
 
 import com.SOF304.yennth.Buoi7.entity.XeOTO;
 import com.SOF304.yennth.Buoi7.service.XeOTOService;

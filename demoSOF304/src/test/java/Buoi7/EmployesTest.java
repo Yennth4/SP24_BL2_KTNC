@@ -1,8 +1,7 @@
-package Buoi7Test;
+package Buoi7;
 
 import com.SOF304.yennth.Buoi7.entity.Employes;
 import com.SOF304.yennth.Buoi7.service.EmployesService;
-import com.beust.ah.A;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
