@@ -4,9 +4,6 @@ import com.SOF304.yennth.Buoi12.service.TinhToanService;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class TinhToanServiceTest {
